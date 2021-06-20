@@ -1,0 +1,4 @@
+# Write down what you do not want to be pushed to github.
+
+# Ignoring node_modules folder
+node_modules/
