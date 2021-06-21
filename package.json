@@ -4,7 +4,8 @@
   "description": "A technical ReactJS test project.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --mode development --config ./config/webpack.config.js"
+    "start": "webpack serve --mode development --config ./config/webpack.config.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.4",
     "source-map-loader": "^3.0.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.39.1",
