@@ -8,8 +8,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   devServer: {
+    historyApiFallback: true,
     hot: true,
     port: 5000,
     contentBase: path.resolve(__dirname, 'src'),
