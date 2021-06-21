@@ -19,8 +19,8 @@ class App extends React.Component{
     this.countDaysTillBD = this.countDaysTillBD.bind(this);
   };
 
-  componentDidMount() {
-    axios.get(URL)
+  async componentDidMount() {
+    await axios.get(URL)
     .then(res => {
       const data = res.data.data;
       let {
