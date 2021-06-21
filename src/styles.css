@@ -1,0 +1,32 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 30vw;
+  max-width: 30vw;
+  margin: 50px auto;
+}
+
+.navbar-container {
+  margin-bottom: 35px;
+}
+
+a.navlink{
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+ul li a.navlink:hover{
+  background-color: red;
+  color: #fff;
+}
+
+.navlink.active{
+  background-color: red;
+  color: #fff;
+}
