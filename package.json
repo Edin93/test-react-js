@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Edin93/test-react-js#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
