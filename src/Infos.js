@@ -77,7 +77,7 @@ class Infos extends React.Component {
           <FormGroup>
             <Label for="firstName">Prenom</Label>
             <Input
-              value={firstName}
+              value={firstName || ''}
               onChange={(e) => this.handleChange(e)}
               type="text"
               name="firstName"
@@ -88,7 +88,7 @@ class Infos extends React.Component {
           <FormGroup>
             <Label for="lastName">Nom</Label>
             <Input
-              value={lastName}
+              value={lastName || ''}
               onChange={(e) => this.handleChange(e)}
               type="text"
               name="lastName"
@@ -99,7 +99,7 @@ class Infos extends React.Component {
           <FormGroup>
             <Label for="birthDate">Date de naissance</Label>
             <Input
-              value={birthDate}
+              value={birthDate || ''}
               onChange={(e) => this.handleChange(e)}
               type="date"
               name="birthDate"
