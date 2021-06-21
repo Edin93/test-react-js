@@ -5,7 +5,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      daysTillBD: null,
+      daysTillBD: '',
       firstName: '',
     };
   };
@@ -21,6 +21,21 @@ class Home extends React.Component {
     });
   };
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.firstName !== this.props.firstName) {
+      this.setState({
+        ...this.state,
+        firstName: this.props.firstName,
+      });
+    }
+    if (prevProps.daysTillBD !== this.props.daysTillBD) {
+      this.setState({
+        ...this.state,
+        daysTillBD: this.props.daysTillBD,
+      });
+    }
+  };
+
   render() {
     
     let {
@@ -31,7 +46,7 @@ class Home extends React.Component {
     return (
       <div>
         <h2>
-          Bonjour {firstName} votre anniversaire est dans {daysTillBD} jours.
+          Bonjour {firstName ? `${firstName}` : `inconnu`} votre anniversaire est {daysTillBD ? `dans ${daysTillBD} jours` : `inconnu`}.
           Si cela est incorrect vous pouvez modifier les informations sur votre <Link to='/infos'>page informations</Link>.
         </h2>
       </div>
