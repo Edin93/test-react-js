@@ -19,10 +19,10 @@
 * Run tests:
   * ```npm run test```
 * Open the application on your browser:
-  * [Localhost](http://localhost:5000/)
+  * [Localhost](http://localhost:5000/){:target="_blank"}
 
 ## Technologies:
-* API: [regres](https://reqres.in/)
+* API: [regres](https://reqres.in/){:target="_blank"}
 * FrontEnd:
   * UI: ReactJS.
   * Routing: React router.
@@ -32,4 +32,3 @@
   * Enzyme.
 * Configuration:
   * No boilerplate has been used for the project. Webpack, babel and Enzyme configurations are made from scratch.
-  
